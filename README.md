@@ -41,3 +41,9 @@ To pull the upstream changes to the submodule, use the following command:
 ```bash
 git submodule update --remote
 ```
+
+## Notes
+
+The Git submodule strategy works for code-sharing, but there are some caveats. Robocorp Cloud does not automatically clone the submodules at the time of writing, and there is no way to run manual cloning commands in Robocorp Cloud.
+
+If you use Git submodules, you can still upload your robot to Robocorp Cloud using the upload functionality in Robocorp Lab, VS Code, or RCC. Since the upload creates a zip package with the project contents, the zip also contains the submodules!
